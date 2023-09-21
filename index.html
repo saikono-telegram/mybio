@@ -95,6 +95,32 @@ document.addEventListener('DOMContentLoaded', t_setvisRecs);
 })();
 </script>
 <style type="text/css">@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}
+.snow1{
+  background-image: url(images/snow1.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: snow1 18s linear infinite;    
+}
+
+.snow2{
+  background-image: url(images/snow2.png), url(images/snow3.png);
+  animation: snow2 10s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@keyframes snow2{
+    0%{background-position: 0 0, 0 0;}
+    100%{background-position: 10% 600px, 10% 600px;}
+}
+@keyframes snow1{
+    from{background-position: 0 -300px;}
+    20% {background-position: 20% -100px;}
+    40% {background-position: 30% 100px;}
+    to{background-position: 20% 800px;}
+}
 </style>
 </head>
 <body class="t-body" style="margin:0;"><!--allrecords-->
@@ -103,6 +129,8 @@ document.addEventListener('DOMContentLoaded', t_setvisRecs);
 			<div class="t-cover" id="recorddiv500469562" bgimgfield="img" style="height:100vh; background-image:url(images/d946dbce69a24e0288d5.jpg);">
 				<div class="t-cover__carrier" id="coverCarry500469562" data-content-cover-id="500469562" data-content-cover-bg="images/d946dbce69a24e0288d5.jpg" data-display-changed="true" data-content-cover-height="100vh" data-content-cover-parallax="fixed" style="height:100vh; " itemscope itemtype="http://schema.org/ImageObject">
 					<meta itemprop="image" content="images/d946dbce69a24e0288d5.jpg">
+				<div class="snow1"></div>
+				<div class="snow2"></div>
 				</div>
 				<div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=&#x27;#4c000000&#x27;, endColorstr=&#x27;#4c000000&#x27;);">
 					
